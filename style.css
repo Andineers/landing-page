@@ -4,18 +4,20 @@
 }
 body {
   font-family: "Roboto";
+  overflow-x: hidden;
 }
 .hero {
-    color: #fff;
-  
-    display: grid;
-  }
+  color: #fff;
+  display: grid;
+}
 .hero-left {
   margin: auto 0;
 }
+
+/* Versi Mobile */
 @media (max-width: 768px) {
   .hero {
-    background-color: red;
+    background-color: #2eb5c0;
   }
   .hero img {
     width: 100%;
@@ -24,10 +26,31 @@ body {
     padding: 36px 18px;
     text-align: center;
   }
+  .hero-left p {
+    font-size: 16px;
+    margin-top: 25px;
+    text-align: center;
+  }
   .about img {
     display: none;
   }
+
+  .about-content h2 {
+    width: 100%;
+    margin: 20px;
+    text-align: justify;
+    max-width: max-content;
+  }
+  .about-content p {
+    width: 100%;
+    margin: 20px;
+    font-size: 18px;
+    text-align: justify;
+    justify-content: space-between;
+  }
 }
+
+/*versi desktop*/
 @media (min-width: 768px) {
   .hero {
     grid-template-columns: 1fr 1fr;
@@ -37,14 +60,187 @@ body {
   }
   .hero-left {
     padding-left: 97px;
+    margin-top: 35px;
   }
-  .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+  .hero-left p {
+    font-size: 20px;
+    margin-top: 25px;
   }
-  .about-content {
-    margin: auto;
+  .hero img {
+    margin-left: 100px;
   }
+}
 
+.about {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.about-content h2 {
+  width: 100cqmin;
+  text-align: justify;
+  justify-content: space-between;
+  padding-top: 108px;
+  width: 553px;
+}
+.about-content p {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  text-align: justify;
+  width: 553px;
+}
+
+.paragraph p {
+  margin-bottom: 20px;
+}
+.tutorial h2 {
+  display: flex;
+  justify-content: center;
+}
+.card-product {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+.bagian1 {
+  width: 272px;
+  padding: 20px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  background-color: rgba(60, 196, 229, 0.12);
+}
+.bagian1 img {
+  margin-bottom: 20px;
+}
+.bagian1 p {
+  margin-bottom: 20px;
+  color: rgba(10, 37, 64, 1);
+  margin-bottom: 40px;
+}
+.bagian1 a {
+  text-decoration: none;
+  color: rgba(46, 181, 192, 1);
+}
+.bagian2 {
+  width: 272px;
+  padding: 20px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  background-color: rgba(242, 159, 5, 0.12);
+}
+.bagian2 img {
+  margin-bottom: 20px;
+}
+.bagian2 p {
+  margin-bottom: 20px;
+  color: rgba(10, 37, 64, 1);
+  margin-bottom: 40px;
+}
+.bagian2 a {
+  text-decoration: none;
+  color: rgba(46, 181, 192, 1);
+}
+.bagian3 {
+  width: 272px;
+  padding: 20px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  background-color: rgba(244, 89, 34, 0.12);
+}
+.bagian3 img {
+  margin-bottom: 20px;
+}
+.bagian3 p {
+  margin-bottom: 20px;
+}
+.bagian3 a {
+  text-decoration: none;
+  color: rgba(46, 181, 192, 1);
+}
+.bagian4 {
+  width: 272px;
+  padding: 20px;
+  border: 1px solid rgba(225, 225, 225, 1);
+  background-color: rgba(62, 84, 164, 0.12);
+}
+.bagian4 img {
+  margin-bottom: 20px;
+}
+.bagian4 p {
+  margin-bottom: 20px;
+}
+.bagian4 a {
+  text-decoration: none;
+  color: rgba(46, 181, 192, 1);
+}
+.info h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.paket-langganan,
+.material {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.image-background {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  position: relative;
+  text-align: center;
+}
+.container {
+  height: 500px;
+  width: 1390px;
+  background-color: white;
+  top: 2000px;
+  position: absolute;
+  margin-left: 248px;
+  border-bottom-left-radius: 150px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  justify-content: space-between;
+}
+.info-box h1 {
+  margin-bottom: 40px;
+}
+.box-discount-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-top: -900px;
+  transform: translate(50%, 50%);
+  margin-left: 400px;
+}
+.box-discount {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.box-discount img {
+  max-width: 50px;
+  height: auto;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.text-content p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
 }
